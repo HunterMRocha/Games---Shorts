@@ -1,4 +1,5 @@
 # import pygame 
+import numpy as np
 from random import randint
 from particle import Particle
 
@@ -13,6 +14,8 @@ class ParticleEffect:
 		self.len = len(self.particles)
 		self.gravity = 0.02
 
+
+	''' method used to fill numpy list with particles '''
 	def fill(self): 
 		for i in range(self.count):
 			# particle attributes
